@@ -21,6 +21,17 @@ provider:
   name: aws
   runtime: python3.6
 
+
+plugins:
+  - serverless-domain-manager
+
+custom:
+  customDomain:
+    domainName: sukantomondal.ca
+    basePath: ''
+    stage: ${self:provider.stage}
+    createRoute53Record: true
+
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
