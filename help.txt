@@ -1,0 +1,16 @@
+
+
+To install custom url plugin for api gateway:
+
+1. First make a json file for package:
+
+npm init -y
+
+2. Install custom url:
+
+npm install serverless-domain-manager --save-dev
+
+
+
+
+
